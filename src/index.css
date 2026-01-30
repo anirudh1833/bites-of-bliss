@@ -1,96 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Soft Pastel Bakery Palette */
+    --background: 40 50% 97%;
+    --foreground: 25 30% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 30% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 30% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Buttery Yellow - Primary brand */
+    --primary: 45 85% 75%;
+    --primary-foreground: 25 40% 18%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Blush Pink - Secondary */
+    --secondary: 350 55% 92%;
+    --secondary-foreground: 350 40% 30%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Mint Green - Accent */
+    --accent: 160 45% 88%;
+    --accent-foreground: 160 40% 25%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Cream - Muted */
+    --muted: 40 40% 94%;
+    --muted-foreground: 25 20% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 40 30% 88%;
+    --input: 40 30% 90%;
+    --ring: 45 85% 65%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Custom bakery colors */
+    --mint: 160 45% 85%;
+    --mint-dark: 160 40% 35%;
+    --blush: 350 55% 90%;
+    --blush-dark: 350 45% 45%;
+    --cream: 40 50% 96%;
+    --butter: 45 85% 78%;
+    --butter-dark: 45 70% 50%;
+    --chocolate: 25 50% 25%;
+    --caramel: 30 60% 50%;
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 30% 20% / 0.08);
+    --shadow-card: 0 8px 30px -8px hsl(25 30% 20% / 0.1);
+    --shadow-hover: 0 12px 40px -10px hsl(25 30% 20% / 0.15);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 25 25% 10%;
+    --foreground: 40 30% 95%;
+    --card: 25 25% 12%;
+    --card-foreground: 40 30% 95%;
+    --popover: 25 25% 12%;
+    --popover-foreground: 40 30% 95%;
+    --primary: 45 75% 60%;
+    --primary-foreground: 25 40% 10%;
+    --secondary: 350 40% 25%;
+    --secondary-foreground: 350 30% 90%;
+    --accent: 160 35% 25%;
+    --accent-foreground: 160 40% 90%;
+    --muted: 25 20% 18%;
+    --muted-foreground: 40 20% 65%;
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 45 70% 50%;
   }
 }
 
@@ -99,7 +93,87 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Nunito', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer components {
+  .heading-display {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply text-foreground;
+  }
+
+  .heading-hero {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight;
+  }
+
+  .card-bakery {
+    @apply bg-card rounded-2xl shadow-[var(--shadow-card)] transition-all duration-300 hover:shadow-[var(--shadow-hover)] hover:-translate-y-1;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:brightness-105 rounded-full px-6 py-3 font-semibold transition-all duration-300 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-card)];
+  }
+
+  .btn-whatsapp {
+    @apply bg-[hsl(142,70%,45%)] text-white hover:bg-[hsl(142,70%,40%)] rounded-full transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply px-4 md:px-8 lg:px-16 py-16 md:py-24;
+  }
+
+  .badge-featured {
+    @apply bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full;
+  }
+
+  .input-bakery {
+    @apply bg-muted border-border rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-200;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes pulse-soft {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 hsl(142 70% 45% / 0.4);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 15px hsl(142 70% 45% / 0);
+    }
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-[hsl(var(--caramel))] via-[hsl(var(--butter-dark))] to-[hsl(var(--blush-dark))] bg-clip-text text-transparent;
   }
 }
