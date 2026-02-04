@@ -7,7 +7,9 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-10 lg:gap-16">
             {/* Brand */}
             <div className="space-y-4">
-              <h3 className="font-serif text-2xl font-semibold">Sweet Home Bakery</h3>
+              <h3 className="font-serif text-2xl font-semibold">
+                Bake by <span className="text-blush-dark">bites</span>
+              </h3>
               <p className="text-cream/70 leading-relaxed">
                 Bringing handcrafted sweetness from our home kitchen to your 
                 special moments. Every bite is baked with love.
@@ -101,7 +103,7 @@ const Footer = () => {
       <div className="border-t border-cream/10 py-6">
         <div className="container mx-auto max-w-6xl px-4 md:px-8">
           <p className="text-center text-cream/50 text-sm">
-            © {new Date().getFullYear()} Sweet Home Bakery. Baked with 💛 in [City Name].
+            © {new Date().getFullYear()} Bake by bites. Baked with 💛 in [City Name].
           </p>
         </div>
       </div>
