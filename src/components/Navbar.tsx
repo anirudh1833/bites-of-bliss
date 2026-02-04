@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#" className="font-serif text-xl md:text-2xl font-semibold text-foreground">
-            Sweet Home <span className="text-blush-dark">Bakery</span>
+            Bake by <span className="text-blush-dark">bites</span>
           </a>
 
           {/* Navigation Links */}
