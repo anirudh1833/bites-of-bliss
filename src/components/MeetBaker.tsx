@@ -41,7 +41,7 @@ const MeetBaker = () => {
                 Whether I’m whipping up a simple birthday cake for a neighbour or working on a big wedding order, I put my whole heart into it.
               </p>
               <p>
-                I’m really picky about what goes into my bakes, too—real butter, fresh eggs, and proper vanilla beans. 
+                I’m really picky about what goes into my bakes too - real butter, fresh eggs, and proper vanilla beans. 
                 No shortcuts. I just believe that if you’re going to make something sweet, 
                 <span className="font-semibold text-foreground"> you have to do it right.</span>.
               </p>
