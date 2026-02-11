@@ -10,9 +10,9 @@ const FloatingWhatsApp = () => {
 
   const handleClick = () => {
     const message = encodeURIComponent(
-      "Hi! I'd like to place an order from Sweet Home Bakery 🎂"
+      "Hi! I'd like to place an order from Bites of Bliss 🎂"
     );
-    window.open(`https://wa.me/1234567890?text=${message}`, "_blank");
+    window.open(`https://wa.me/353899721609?text=${message}`, "_blank");
   };
 
   if (!isVisible) return null;
