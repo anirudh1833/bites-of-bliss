@@ -26,13 +26,13 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto max-w-7xl px-4 md:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo - Image & Text */}
-          <a href="#" className="flex items-center gap-3 group">
+          <a href="#" className="flex items-center gap-4 group">
              <img 
-               src="/logo.png" 
+               src="/logo_2.png" 
                alt="Bites of Bliss Logo" 
-               className="h-10 w-auto object-contain md:h-12 transition-transform duration-300 group-hover:scale-105" 
+               className="h-14 w-auto object-contain md:h-20 transition-transform duration-300 group-hover:scale-105" 
              />
              <span className="font-serif text-xl md:text-2xl font-semibold text-foreground tracking-tight">
                 Bites of <span className="text-blush-dark">Bliss</span>
