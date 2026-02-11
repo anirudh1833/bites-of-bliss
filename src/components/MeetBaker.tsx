@@ -20,7 +20,7 @@ const MeetBaker = () => {
             </div>
             {/* Experience badge */}
             <div className="absolute -bottom-6 -right-6 bg-card rounded-2xl px-6 py-4 shadow-card">
-              <p className="font-serif text-3xl font-bold text-primary-foreground">10+</p>
+              <p className="font-serif text-3xl font-bold text-primary-foreground">5+</p>
               <p className="text-sm text-muted-foreground">Years of Baking</p>
             </div>
           </div>
@@ -31,21 +31,19 @@ const MeetBaker = () => {
               The Heart Behind the Kitchen
             </span>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground leading-tight">
-              Meet Sarah, <br />
+              Meet Varsha, <br />
               <span className="text-blush-dark">Your Home Baker</span>
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                What started as a childhood love for licking cake batter has blossomed 
-                into a passion that fills our home with the most heavenly aromas. 
-                From baking birthday cakes for neighbors to crafting wedding centerpieces, 
-                every creation comes straight from the heart.
+                It all started with me sneaking tastes of cake batter as a kid. 
+                That childhood love turned into a real obsession, and now my kitchen is constantly filled with the smell of fresh baking. 
+                Whether I’m whipping up a simple birthday cake for a neighbour or working on a big wedding order, I put my whole heart into it.
               </p>
               <p>
-                I believe in using only the finest ingredients—real butter, 
-                farm-fresh eggs, and vanilla beans that have traveled from 
-                Madagascar. Because when it comes to sweetness, 
-                <span className="font-semibold text-foreground"> quality is never optional</span>.
+                I’m really picky about what goes into my bakes, too—real butter, fresh eggs, and proper vanilla beans. 
+                No shortcuts. I just believe that if you’re going to make something sweet, 
+                <span className="font-semibold text-foreground"> you have to do it right.</span>.
               </p>
             </div>
             <div className="flex flex-wrap gap-4 pt-4">
@@ -54,7 +52,7 @@ const MeetBaker = () => {
                 <p className="text-sm text-muted-foreground">Handmade</p>
               </div>
               <div className="bg-blush/50 rounded-2xl px-5 py-3">
-                <p className="font-serif font-semibold text-blush-dark">500+</p>
+                <p className="font-serif font-semibold text-blush-dark">100+</p>
                 <p className="text-sm text-muted-foreground">Happy Customers</p>
               </div>
               <div className="bg-primary/30 rounded-2xl px-5 py-3">
