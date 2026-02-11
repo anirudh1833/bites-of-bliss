@@ -27,13 +27,16 @@ const Navbar = () => {
     >
       <div className="container mx-auto max-w-7xl px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo - Image */}
-          <a href="#" className="flex items-center gap-2">
+          {/* Logo - Image & Text */}
+          <a href="#" className="flex items-center gap-3 group">
              <img 
                src="/logo.png" 
                alt="Bites of Bliss Logo" 
-               className="h-12 w-auto object-contain md:h-16" 
+               className="h-10 w-auto object-contain md:h-12 transition-transform duration-300 group-hover:scale-105" 
              />
+             <span className="font-serif text-xl md:text-2xl font-semibold text-foreground tracking-tight">
+                Bites of <span className="text-blush-dark">Bliss</span>
+             </span>
           </a>
 
           {/* Navigation Links */}
@@ -52,7 +55,7 @@ const Navbar = () => {
           {/* CTA */}
           <a
             href="#custom-cake"
-            className="btn-primary text-sm px-6 py-2.5 shadow-md"
+            className="btn-primary text-sm px-6 py-2.5 shadow-md hover:shadow-lg transition-all"
           >
             Order Now
           </a>
