@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 // Importing images from assets
 import cupcakesImg from "../assets/cupcakes.jpg";
-import cakesImg from "../assets/menu.jpg";
+import cakesImg from "../assets/cake.jpg";
 import treatsImg from "../assets/brookies.jpg";
 import packagesImg from "../assets/hero-cake.jpg";
 
