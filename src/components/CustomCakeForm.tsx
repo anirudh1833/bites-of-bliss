@@ -33,7 +33,7 @@ const CustomCakeForm = () => {
               const message = encodeURIComponent(
                 `Hi! I just submitted a custom cake inquiry:\n\nName: ${formData.name}\nDate Needed: ${formData.date}\nFlavor: ${formData.flavor}\nVision: ${formData.vision}`
               );
-              window.open(`https://wa.me/1234567890?text=${message}`, "_blank");
+              window.open(`https://wa.me/353899721609?text=${message}`, "_blank");
             },
           },
           duration: 8000,
