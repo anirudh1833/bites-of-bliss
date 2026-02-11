@@ -25,7 +25,7 @@ const Menu = () => {
           
           {/* Download Button */}
           <div className="pt-4">
-            <a href="/menu.pdf" download="BakeByBites_Menu.pdf">
+            <a href="/menu.pdf" download="BitesofBliss_Menu.pdf">
               <Button variant="outline" className="gap-2 border-primary text-primary-foreground bg-primary hover:bg-primary/90">
                 <Download className="w-4 h-4" />
                 Download Full Menu (PDF)
