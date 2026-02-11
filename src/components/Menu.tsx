@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 // Importing images from assets
 import cupcakesImg from "../assets/cupcakes.jpg";
 import cakesImg from "../assets/red-velvet.jpg";
-import treatsImg from "../assets/macarons.jpg";
+import treatsImg from "../assets/brookies.jpg";
 import packagesImg from "../assets/hero-cake.jpg";
 
 const Menu = () => {
