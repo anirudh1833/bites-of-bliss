@@ -31,7 +31,7 @@ const Navbar = () => {
           <a href="#" className="flex items-center gap-2">
              <img 
                src="/logo.png" 
-               alt="Bake by Bites Logo" 
+               alt="Bites of Bliss Logo" 
                className="h-12 w-auto object-contain md:h-16" 
              />
           </a>
