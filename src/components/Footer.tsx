@@ -8,7 +8,7 @@ const Footer = () => {
             {/* Brand */}
             <div className="space-y-4">
               <h3 className="font-serif text-2xl font-semibold">
-                Bake by <span className="text-blush-dark">bites</span>
+                Bites of <span className="text-blush-dark">Bliss</span>
               </h3>
               <p className="text-cream/70 leading-relaxed">
                 Bringing handcrafted sweetness from our home kitchen to your 
@@ -83,7 +83,7 @@ const Footer = () => {
                 <a href="#about" className="text-cream/70 hover:text-butter transition-colors">
                   Meet the Baker
                 </a>
-                <a href="#gallery" className="text-cream/70 hover:text-butter transition-colors">
+                <a href="#menu" className="text-cream/70 hover:text-butter transition-colors">
                   Our Menu
                 </a>
                 <a href="#custom-cake" className="text-cream/70 hover:text-butter transition-colors">
@@ -103,7 +103,7 @@ const Footer = () => {
       <div className="border-t border-cream/10 py-6">
         <div className="container mx-auto max-w-6xl px-4 md:px-8">
           <p className="text-center text-cream/50 text-sm">
-            © {new Date().getFullYear()} Bake by bites. Baked with 💛 in [City Name].
+            © {new Date().getFullYear()} Bites of Bliss. Baked with 💛 in [City Name].
           </p>
         </div>
       </div>
