@@ -43,7 +43,7 @@ const MeetBaker = () => {
               <p>
                 I’m really picky about what goes into my bakes too - real butter, fresh eggs, and proper vanilla beans. 
                 No shortcuts. I just believe that if you’re going to make something sweet, 
-                <span className="font-semibold text-foreground"> you have to do it right.</span>.
+                <span className="font-semibold text-foreground"> you have to do it right</span>.
               </p>
             </div>
             <div className="flex flex-wrap gap-4 pt-4">
