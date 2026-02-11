@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MeetBaker from "@/components/MeetBaker";
-import Gallery from "@/components/Gallery";
+import Menu from "@/components/Menu"; // Import the new Menu component
 import CustomCakeForm from "@/components/CustomCakeForm";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -13,7 +13,7 @@ const Index = () => {
       <main className="pt-16 md:pt-20">
         <Hero />
         <MeetBaker />
-        <Gallery />
+        <Menu /> {/* Used to be Gallery */}
         <CustomCakeForm />
       </main>
       <Footer />
