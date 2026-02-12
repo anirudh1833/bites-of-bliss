@@ -1,14 +1,15 @@
 import { useState } from "react";
 import { toast } from "sonner";
+import { Camera, Link as LinkIcon } from "lucide-react";
 
 const CustomCakeForm = () => {
-  // Updated state to hold separate sponge and frosting values
   const [formData, setFormData] = useState({
     name: "",
     date: "",
     sponge: "",
     frosting: "",
     vision: "",
+    inspirationLink: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -22,7 +23,7 @@ const CustomCakeForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate submission
+    // Simulate submission delay for a smooth UI experience
     setTimeout(() => {
       setIsSubmitting(false);
       toast.success(
@@ -32,8 +33,9 @@ const CustomCakeForm = () => {
           action: {
             label: "Open WhatsApp",
             onClick: () => {
+              const linkText = formData.inspirationLink ? `\nInspiration Link: ${formData.inspirationLink}` : "";
               const message = encodeURIComponent(
-                `Hi! I just submitted a custom cake inquiry:\n\nName: ${formData.name}\nDate Needed: ${formData.date}\nSponge: ${formData.sponge}\nFrosting: ${formData.frosting}\nVision: ${formData.vision}`
+                `Hi! I just submitted a custom cake inquiry:\n\nName: ${formData.name}\nDate Needed: ${formData.date}\nSponge: ${formData.sponge}\nFrosting: ${formData.frosting}\nVision: ${formData.vision}${linkText}`
               );
               // Replace with your actual WhatsApp number (e.g., 353871234567)
               window.open(`https://wa.me/353899721609?text=${message}`, "_blank");
@@ -42,7 +44,7 @@ const CustomCakeForm = () => {
           duration: 8000,
         }
       );
-      setFormData({ name: "", date: "", sponge: "", frosting: "", vision: "" });
+      setFormData({ name: "", date: "", sponge: "", frosting: "", vision: "", inspirationLink: "" });
     }, 1000);
   };
 
@@ -163,12 +165,11 @@ const CustomCakeForm = () => {
                 value={formData.vision}
                 onChange={handleChange}
                 required
-                rows={4}
-                placeholder="Tell us about your dream cake—theme, colors, decorations, serving size, any inspiration photos you have..."
+                rows={3}
+                placeholder="Theme, colors, decorations, serving size..."
                 className="w-full input-bakery resize-none"
               />
             </div>
-          </div>
 
             {/* Inspiration Link */}
             <div className="space-y-2 md:col-span-2">
@@ -208,30 +209,15 @@ const CustomCakeForm = () => {
               {isSubmitting ? (
                 <>
                   <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
-                    <circle
-                      className="opacity-25"
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                      fill="none"
-                    />
-                    <path
-                      className="opacity-75"
-                      fill="currentColor"
-                      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                    />
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
                   </svg>
                   Sending...
                 </>
               ) : (
-                "Send Inquiry"
+                "Send Inquiry via WhatsApp"
               )}
             </button>
-            <span className="text-sm text-muted-foreground">
-              or message us directly on WhatsApp
-            </span>
           </div>
         </form>
       </div>
