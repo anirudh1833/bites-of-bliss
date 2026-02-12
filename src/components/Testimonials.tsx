@@ -4,7 +4,7 @@ import { Card, CardContent } from "./ui/card";
 const Testimonials = () => {
   const reviews = [
     {
-      name: "Sarah M.",
+      name: "Sandhiya",
       location: "South Dublin",
       text: "I ordered a custom gender reveal cake and it was absolutely perfect! The sponge was so moist and the design was exactly what we wanted. It made our special day even more memorable!",
     },
