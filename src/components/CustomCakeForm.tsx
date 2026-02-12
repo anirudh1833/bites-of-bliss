@@ -170,6 +170,34 @@ const CustomCakeForm = () => {
             </div>
           </div>
 
+            {/* Inspiration Link */}
+            <div className="space-y-2 md:col-span-2">
+              <label htmlFor="inspirationLink" className="block text-sm font-medium text-foreground flex items-center gap-2">
+                <LinkIcon className="w-4 h-4" />
+                Inspiration Link <span className="text-muted-foreground font-normal">(Optional)</span>
+              </label>
+              <input
+                type="url"
+                id="inspirationLink"
+                name="inspirationLink"
+                value={formData.inspirationLink}
+                onChange={handleChange}
+                placeholder="Paste a Pinterest or Instagram link here..."
+                className="w-full input-bakery"
+              />
+            </div>
+          </div>
+
+          {/* Friendly Photo Prompt */}
+          <div className="mt-8 bg-blush/20 border border-blush/50 rounded-2xl p-5 flex items-center gap-4 shadow-sm">
+            <div className="bg-white p-3 rounded-full text-chocolate shrink-0 shadow-sm">
+              <Camera className="w-6 h-6" />
+            </div>
+            <p className="text-chocolate font-medium leading-relaxed">
+              Have a screenshot? Awesome! Have it ready to attach as soon as our WhatsApp chat opens. 📸
+            </p>
+          </div>
+
           {/* Submit */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center justify-center">
             <button
